@@ -1,0 +1,942 @@
+(dp0
+S'buildDestination'
+p1
+VC:\u005cUsers\u005cSteffen\u005cunder_water\u005cunder_water.html
+p2
+sS'saveDestination'
+p3
+VC:\u005cUsers\u005cSteffen\u005cunder_water\u005cunder_water.tws
+p4
+sS'target'
+p5
+S'sugarcane'
+p6
+sS'storyPanel'
+p7
+(dp8
+S'widgets'
+p9
+(lp10
+(dp11
+S'selected'
+p12
+I00
+sS'pos'
+p13
+(lp14
+I7
+aI94
+asS'passage'
+p15
+(itiddlywiki
+Tiddler
+p16
+(dp17
+S'text'
+p18
+V<<silently>>\u000a<<set $air = 100>>\u000a<<set $visited_red_light= "false">>\u000a<<set $tooth="false">>\u000a<<loopsound "snd_under_water.mp3">>\u000a<<endsilently>>\u000a\u000a<html>\u000a<h1>Underwater</h1>\u000a<h3>by Steffen Reichelt<br/>Twine Game Jam in Berlin <br/>27.07.2013</h3>\u000a</html>\u000a\u000aYou open your eyes and the only thing that you notice is, that your deep down Underwater. \u000aThere is not much light arround and you feel a high, havy pressure. \u000aSlowly your remaining air in your lungs is faiding away; \u000aYou need to find a way to the surface.\u000a\u000a[[look arround|looking_arround]]\u000a\u000a<<progress>>
+p19
+sS'tags'
+p20
+(lp21
+sS'created'
+p22
+ctime
+struct_time
+p23
+((I2013
+I7
+I27
+I13
+I5
+I18
+I5
+I208
+I1
+tp24
+(dp25
+tp26
+Rp27
+sS'modified'
+p28
+g27
+sS'title'
+p29
+VStart
+p30
+sbsa(dp31
+g12
+I00
+sg13
+(lp32
+I411
+aI20
+asg15
+(itiddlywiki
+Tiddler
+p33
+(dp34
+g18
+V<<silently>>\u000a<<set $air -= 10>>\u000a<<endsilently>>\u000a\u000a<<if $air lte 0>>\u000a<<display 'no_air'>>\u000a<<else>>\u000a\u000aYou swim to the white light and try to touch it.\u000aIn the moment you're touchen the light, it suddenly pulls away;\u000ayou notice that the light is attached to a Fish: an Anglerfish which tries to catch you.\u000a<html>\u000a<img height="31%" width="31%" src="anglerfisch.jpg">\u000a</html>\u000aWhat do you wan't to do?\u000a\u000a[[swim away|swim_away]]\u000a[[hit him as hard as you can|hit_fish]]\u000a\u000a<<progress>>\u000a<<endif>>
+p35
+sg20
+(lp36
+sg22
+g23
+((I2013
+I7
+I27
+I13
+I8
+I42
+I5
+I208
+I1
+tp37
+(dp38
+tp39
+Rp40
+sg28
+g40
+sg29
+Vfish
+p41
+sbsa(dp42
+g12
+I00
+sg13
+(lp43
+I259
+aI9
+asg15
+(itiddlywiki
+Tiddler
+p44
+(dp45
+g18
+V<<silently>>\u000a<<set $air -= 10>>\u000a<<endsilently>>\u000a<<if $air lte 0>>\u000a<<display 'no_air'>>\u000a<<else>>\u000aYou floating in the Ocean, silently, but nothing changes. You stay where you are and only use up air.\u000a<<display 'possible_options'>>\u000a\u000a<<progress>>\u000a\u000a<<endif>>\u000a
+p46
+sg20
+(lp47
+sg22
+g23
+((I2013
+I7
+I27
+I13
+I8
+I59
+I5
+I208
+I1
+tp48
+(dp49
+tp50
+Rp51
+sg28
+g51
+sg29
+Vfloating1
+p52
+sbsa(dp53
+g12
+I00
+sg13
+(lp54
+I972
+aI642
+asg15
+(itiddlywiki
+Tiddler
+p55
+(dp56
+g18
+VYou continue swimming through the underwater cave, with nearly no air left.\u000aWith closed eyed you keep on pushing and pushing, till your consciousness starts to fade away.\u000aAll of a sudden a hand grabs you and pulls you out of the water on the surface. \u000aSlowly you regain consciousness, with blurry senses you recognize a familiar face.\u000aYou hear the person saying: You are alive!!!\u000a\u000a[[What's the meaning of this story?|meaning]]\u000a
+p57
+sg20
+(lp58
+sg22
+g23
+((I2013
+I7
+I27
+I13
+I9
+I37
+I5
+I208
+I1
+tp59
+(dp60
+tp61
+Rp62
+sg28
+g62
+sg29
+Vpositive_end
+p63
+sbsa(dp64
+g12
+I00
+sg13
+(lp65
+I1151
+aI541
+asg15
+(itiddlywiki
+Tiddler
+p66
+(dp67
+g18
+VI wrote this story after my I finished my studies and was looking for a job. \u000aThe inspiration comes form this song: \u000a<html>\u000a<a href="http://www.myvideo.de/watch/9036625/Kopf_unter_Wasser">Chakuza - Kopf unter Wasser</a>\u000a</html>\u000a\u000aEspecially in these days where you searching for your identity, \u000awhere you ask yourself who you are, you can feel down and melancholic.\u000aThis feeling is for me very similiar to be deep down in the Ocean;\u000awith all the pressure and that numb feeling,\u000athats why the scenario is underwater.\u000a\u000aAll the actions that you can take in the game are metaphors for different experiences\u000athat I had during this time:\u000a\u000aThe Anglerfish stands for a possibility Job that looks at first very attractive,\u000abut when you look closer it would consume you and eat you up.\u000a\u000aThe red light(which turns into a vulcano) is a symbol for a close friend, \u000awhich you think wants to help you but \u000ain reality just hurts you the longer you stay with him.\u000a\u000aWhen you are just floating arround and doing nothing, the pressure isn't going away.\u000aYou have lesse power (air) to do other things. It's the worst option that you can take.\u000a\u000aThe cave stands for a new way, that you can just take after you failed or made a negative\u000aexperience (anglerfish). You need to get stronger, you need to fail, to see this new \u000aoption.\u000a\u000aStill after choosing a new option, after you've changed, it's hard to keep on going.\u000aAnd it's possible that it's the wrong way. But when you keep on going, and with real\u000afriends that supports you, you can create great things and to find your identity.\u000a\u000a\u000a\u000a\u000a\u000a\u000a
+p68
+sg20
+(lp69
+sg22
+g23
+((I2013
+I7
+I27
+I13
+I9
+I48
+I5
+I208
+I1
+tp70
+(dp71
+tp72
+Rp73
+sg28
+g73
+sg29
+Vmeaning
+p74
+sbsa(dp75
+g12
+I00
+sg13
+(lp76
+I1041
+aI187
+asg15
+(itiddlywiki
+Tiddler
+p77
+(dp78
+g18
+VYou died. \u000aAlone in the deep dark ocean your journey ends.\u000a\u000a[[What's the meaning of this story|meaning]]
+p79
+sg20
+(lp80
+sg22
+g23
+((I2013
+I7
+I27
+I13
+I10
+I12
+I5
+I208
+I1
+tp81
+(dp82
+tp83
+Rp84
+sg28
+g84
+sg29
+Vnegative_end
+p85
+sbsa(dp86
+g12
+I00
+sg13
+(lp87
+I611
+aI0
+asg15
+(itiddlywiki
+Tiddler
+p88
+(dp89
+g18
+VYou are trying to swim as fast as you can, \u000abut the fish is catching up and eats you alive.\u000a<<display 'negative_end'>>
+p90
+sg20
+(lp91
+sg22
+g23
+((I2013
+I7
+I27
+I13
+I14
+I12
+I5
+I208
+I1
+tp92
+(dp93
+tp94
+Rp95
+sg28
+g95
+sg29
+Vswim_away
+p96
+sbsa(dp97
+g12
+I00
+sg13
+(lp98
+I614
+aI137
+asg15
+(itiddlywiki
+Tiddler
+p99
+(dp100
+g18
+V<<silently>>\u000a<<set $air -= 15>>\u000a<<endsilently>>\u000a\u000a<<if $air lte 0>>\u000a<<display 'no_air'>>\u000a<<else>>\u000a\u000aYou hit the fish as hard as you can. \u000aHe swims away, you find one of his tooth and collect it.\u000a<<set $tooth="true">>\u000aWhat do you want to do next?\u000a<<display 'possible_options'>>\u000a\u000a<<progress>>\u000a\u000a<<endif>>
+p101
+sg20
+(lp102
+sg22
+g23
+((I2013
+I7
+I27
+I13
+I17
+I28
+I5
+I208
+I1
+tp103
+(dp104
+tp105
+Rp106
+sg28
+g106
+sg29
+Vhit_fish
+p107
+sbsa(dp108
+g12
+I00
+sg13
+(lp109
+I187
+aI139
+asg15
+(itiddlywiki
+Tiddler
+p110
+(dp111
+S'text'
+p112
+VYou look arround and see in a far distance a white light, maybe another human.\u000aIn the other direction is a red light that seem very familiar to you.\u000aBelow you in the dark you spotted some rocks.\u000aWhat do you do?\u000a\u000a<<display 'possible_options'>>\u000a\u000a<<progress>>\u000a
+p113
+sS'tags'
+p114
+(lp115
+sS'created'
+p116
+g23
+((I2013
+I7
+I27
+I13
+I24
+I25
+I5
+I208
+I1
+tp117
+(dp118
+tp119
+Rp120
+sS'modified'
+p121
+g120
+sS'title'
+p122
+Vlooking_arround
+p123
+sbsa(dp124
+g12
+I00
+sg13
+(lp125
+I397
+aI480
+asg15
+(itiddlywiki
+Tiddler
+p126
+(dp127
+g112
+V<<silently>>\u000a<<set $air -= 15>>\u000a<<endsilently>>\u000a\u000a<<if $air lte 0>>\u000a<<display 'no_air'>>\u000a<<else>>\u000a\u000a\u000aYou see some rocks, that seem to be an entrance to an underwater cave. \u000a<<if $tooth eq "false">>\u000aBut with bare hand you cannot move the rocks.\u000aYou have to do something else:\u000a<<display 'possible_options'>>\u000a\u000a<<else>>\u000a[[Use the tooth of the Fish to remove a stone|cave]]\u000aor\u000a[[look arround|looking_arround2]]\u000a<<endif>>\u000a\u000a<<progress>>\u000a\u000a<<endif>>
+p128
+sg114
+(lp129
+sg116
+g23
+((I2013
+I7
+I27
+I13
+I30
+I4
+I5
+I208
+I1
+tp130
+(dp131
+tp132
+Rp133
+sg121
+g133
+sg122
+Vrocks
+p134
+sbsa(dp135
+g12
+I00
+sg13
+(lp136
+I408
+aI249
+asg15
+(itiddlywiki
+Tiddler
+p137
+(dp138
+g112
+V<<if $tooth eq "false">>\u000a[[swim to the white light|fish]]\u000a<<endif>>\u000a<<if $visited_red_light eq "false">>\u000a[[swim to red light|red_light]]\u000a<<endif>>\u000a[[swim to the rocks|rocks]]\u000a[[float and wait|floating1]]
+p139
+sg114
+(lp140
+sg116
+g23
+((I2013
+I7
+I27
+I13
+I40
+I5
+I5
+I208
+I1
+tp141
+(dp142
+tp143
+Rp144
+sg121
+g144
+sg122
+Vpossible_options
+p145
+sbsa(dp146
+g12
+I00
+sg13
+(lp147
+I600
+aI609
+asg15
+(itiddlywiki
+Tiddler
+p148
+(dp149
+g112
+V<<silently>>\u000a<<set $air -= 10>>\u000a<<endsilently>>\u000a\u000a<<if $air lte 0>>\u000a<<display 'no_air'>>\u000a<<else>>\u000aYou are inside of the cave and the way is splitting.\u000a\u000a<html>\u000a<img height="35%" width="35%" src="splittingcave.jpg">\u000a</html>\u000a\u000aWhich way do you choose?\u000a\u000a[[swim right|right]]\u000a[[swim left|positive_end]]\u000a\u000a<<progress>>\u000a\u000a<<endif>>
+p150
+sg114
+(lp151
+sg116
+g23
+((I2013
+I7
+I27
+I13
+I49
+I5
+I5
+I208
+I1
+tp152
+(dp153
+tp154
+Rp155
+sg121
+g155
+sg122
+Vcave
+p156
+sbsa(dp157
+g12
+I00
+sg13
+(lp158
+I788
+aI504
+asg15
+(itiddlywiki
+Tiddler
+p159
+(dp160
+g112
+V<<silently>>\u000a<<set $air -= 15>>\u000a<<endsilently>>\u000a\u000a<<if $air lte 0>>\u000a<<display 'no_air'>>\u000a<<else>>\u000a\u000aYou swim right. It is a dead end.\u000a\u000a[[go back|cave]]\u000a\u000a<<progress>>\u000a\u000a<<endif>>
+p161
+sg114
+(lp162
+sg116
+g23
+((I2013
+I7
+I27
+I13
+I57
+I14
+I5
+I208
+I1
+tp163
+(dp164
+tp165
+Rp166
+sg121
+g166
+sg122
+Vright
+p167
+sbsa(dp168
+g12
+I00
+sg13
+(lp169
+I215
+aI291
+asg15
+(itiddlywiki
+Tiddler
+p170
+(dp171
+g112
+VYou look arround and have following possibilities:\u000a<<display 'possible_options'>>\u000a<<progress>>\u000a
+p172
+sg114
+(lp173
+sg116
+g23
+((I2013
+I7
+I27
+I13
+I59
+I3
+I5
+I208
+I1
+tp174
+(dp175
+tp176
+Rp177
+sg121
+g177
+sg122
+Vlooking_arround2
+p178
+sbsa(dp179
+g12
+I00
+sg13
+(lp180
+I626
+aI368
+asg15
+(itiddlywiki
+Tiddler
+p181
+(dp182
+S'text'
+p183
+V<<silently>>\u000a<<set $air -= 10>>\u000a<<endsilently>>\u000a\u000a<<if $air lte 0>>\u000a<<display 'no_air'>>\u000a<<else>>\u000a\u000aThe red light seems very familiar, as you would know it since a long time. \u000aIn one moment you think, that a voice is calling your name from the direction of the flame.\u000a<html>\u000a<img height="7%" width="7%" src="red.png">\u000a</html>\u000aWhat do you do?\u000a\u000a[[touch it|touch]]\u000a[[do something else|looking_arround2]]\u000a\u000a<<progress>>\u000a\u000a<<endif>>
+p184
+sS'tags'
+p185
+(lp186
+sS'created'
+p187
+g23
+((I2013
+I7
+I27
+I14
+I3
+I22
+I5
+I208
+I1
+tp188
+(dp189
+tp190
+Rp191
+sS'modified'
+p192
+g191
+sS'title'
+p193
+Vred_light
+p194
+sbsa(dp195
+g12
+I00
+sg13
+(lp196
+I791
+aI240
+asg15
+(itiddlywiki
+Tiddler
+p197
+(dp198
+g183
+V<<silently>>\u000a<<set $air -= 15>>\u000a<<set $visited_red_light  = "true">>\u000a\u000a<<endsilently>>\u000a\u000a<<if $air lte 0>>\u000a<<display 'no_air'>>\u000a<<else>>\u000a\u000aYou reach out your hand and try to touch the light. \u000aIt's burning like crazy. \u000aThe familiar red light turned into a vulcano, that is errupting next to you.\u000a\u000a<html>\u000a<img height="35%" width="35%" src="vulcano.jpg">\u000a</html>\u000a\u000aWhat do you do?\u000a[[stay there|stay]]\u000a[[swim away|swim_away2]]\u000a\u000a<<progress>>\u000a\u000a<<endif>>
+p199
+sg185
+(lp200
+sg187
+g23
+((I2013
+I7
+I27
+I14
+I6
+I16
+I5
+I208
+I1
+tp201
+(dp202
+tp203
+Rp204
+sg192
+g204
+sg193
+Vtouch
+p205
+sbsa(dp206
+g12
+I00
+sg13
+(lp207
+I753
+aI105
+asg15
+(itiddlywiki
+Tiddler
+p208
+(dp209
+g183
+VThe erupting lava consumes you, alive.\u000a<<display 'negative_end'>>
+p210
+sg185
+(lp211
+sg187
+g23
+((I2013
+I7
+I27
+I14
+I9
+I47
+I5
+I208
+I1
+tp212
+(dp213
+tp214
+Rp215
+sg192
+g215
+sg193
+Vstay
+p216
+sbsa(dp217
+g12
+I00
+sg13
+(lp218
+I796
+aI369
+asg15
+(itiddlywiki
+Tiddler
+p219
+(dp220
+g183
+V<<silently>>\u000a<<set $air -= 10>>\u000a<<endsilently>>\u000a\u000a<<if $air lte 0>>\u000a<<display 'no_air'>>\u000a<<else>>\u000a\u000aYou swim away and barely escaped the erruption of the vulcano.\u000a\u000aWhat do you do now?\u000a<<display 'possible_options'>>\u000a\u000a<<progress>>\u000a\u000a<<endif>>
+p221
+sg185
+(lp222
+sg187
+g23
+((I2013
+I7
+I27
+I14
+I11
+I58
+I5
+I208
+I1
+tp223
+(dp224
+tp225
+Rp226
+sg192
+g226
+sg193
+Vswim_away2
+p227
+sbsa(dp228
+g12
+I00
+sg13
+(lp229
+I23
+aI948
+asg15
+(itiddlywiki
+Tiddler
+p230
+(dp231
+g183
+V.passage {\u000a  text-align:center;\u000a}\u000a\u000a#snapback{\u000a display: none;\u000a}\u000a\u000a#share{\u000a display: none;\u000a}\u000a#share{\u000a display: none;\u000a}\u000a\u000a#storyTitle{\u000a display: none;\u000a}\u000a\u000a#storyAuthor{\u000a display: none;\u000a}\u000a\u000a#credits{\u000a display: none;\u000a}\u000a\u000a#sidebar {\u000a  position:relative;\u000a  text-align:center;\u000a  top:0px;\u000a  left:0px;\u000a  width:85%;\u000a  height: 1.0em;\u000a  margin:0 auto 0 auto;\u000a  \u000a}\u000a\u000a#passages{\u000apadding-left:0;\u000amargin-left:0;\u000amargin-top:30px;\u000a\u000afont: bolder 1.5em Helvetica, "Helvetica Neue", Arial, sans-serif;\u000a}\u000a\u000abody {\u000a  background-image: linear-gradient(45deg, rgba(0,0,204,1.0) 0%,rgba(0,0,0,0) 45%),  \u000a    linear-gradient(115deg, rgba(0,0,204,1.0)  0%,rgba(0,0,0,0) 45%), \u000a    linear-gradient(200deg, rgba(0,0,204,1.0)  0%,rgba(0,0,0,0) 45%),\u000a    linear-gradient(320deg, rgba(0,0,204,1.0)  0%,rgba(0,0,0,0) 45%);\u000a\u000a  background-image: -webkit-linear-gradient(45deg, rgba(0,0,204,1.0) 0%,rgba(0,0,0,0) 45%),  \u000a    -webkit-linear-gradient(115deg, rgba(0,0,204,1.0) 0%,rgba(0,0,0,0) 45%), \u000a    -webkit-linear-gradient(200deg, rgba(0,0,204,1.0) 0%,rgba(0,0,0,0) 45%),\u000a    -webkit-linear-gradient(320deg, rgba(0,0,204,1.0) 0%,rgba(0,0,0,0) 45%);\u000a/*\u000a1.lftdown\u000a2.rightdown\u000a3rightup\u000a4left up\u000a*/\u000a  background-attachment:fixed;\u000a  margin: 0;\u000a}
+p232
+sg185
+(lp233
+Vstylesheet
+p234
+asg187
+g23
+((I2013
+I7
+I27
+I14
+I16
+I40
+I5
+I208
+I1
+tp235
+(dp236
+tp237
+Rp238
+sg192
+g238
+sg193
+VCSS
+p239
+sbsa(dp240
+g12
+I00
+sg13
+(lp241
+I45
+aI812
+asg15
+(itiddlywiki
+Tiddler
+p242
+(dp243
+g183
+VSteffen Reichelt
+p244
+sg185
+(lp245
+sg187
+g23
+((I2013
+I7
+I27
+I14
+I17
+I37
+I5
+I208
+I1
+tp246
+(dp247
+tp248
+Rp249
+sg192
+g249
+sg193
+VStoryAuthor
+p250
+sbsa(dp251
+g12
+I00
+sg13
+(lp252
+I11
+aI684
+asg15
+(itiddlywiki
+Tiddler
+p253
+(dp254
+g183
+VUnderwater
+p255
+sg185
+(lp256
+sg187
+g23
+((I2013
+I7
+I27
+I14
+I17
+I58
+I5
+I208
+I1
+tp257
+(dp258
+tp259
+Rp260
+sg192
+g260
+sg193
+VStoryTitle
+p261
+sbsa(dp262
+g12
+I00
+sg13
+(lp263
+I976
+aI19
+asg15
+(itiddlywiki
+Tiddler
+p264
+(dp265
+g183
+VYou have no air left.\u000a<<display 'negative_end'>>
+p266
+sg185
+(lp267
+sg187
+g23
+((I2013
+I7
+I27
+I14
+I44
+I8
+I5
+I208
+I1
+tp268
+(dp269
+tp270
+Rp271
+sg192
+g271
+sg193
+Vno_air
+p272
+sbsa(dp273
+g12
+I00
+sg13
+(lp274
+I329
+aI882
+asg15
+(itiddlywiki
+Tiddler
+p275
+(dp276
+g183
+V(function () {\u000a  version.extensions['soundMacros'] = {\u000a    major: 1,\u000a    minor: 1,\u000a    revision: 1\u000a  };\u000a  var p = macros['playsound'] = {\u000a    soundtracks: {},\u000a    handler: function (a, b, c, d) {\u000a      var loop = function (m) {\u000a          if (m.loop == undefined) {\u000a            m.loopfn = function () {\u000a              this.play();\u000a            };\u000a            m.addEventListener('ended', m.loopfn, 0);\u000a          } else m.loop = true;\u000a          m.play();\u000a          };\u000a      var s = eval(d.fullArgs());\u000a      if (s) {\u000a        s = s.toString();\u000a        var m = this.soundtracks[s.slice(0, s.lastIndexOf("."))];\u000a        if (m) {\u000a          if (b == "playsound") {\u000a            m.play();\u000a          } else if (b == "loopsound") {\u000a            loop(m);\u000a          } else if (b == "pausesound") {\u000a            m.pause();\u000a          } else if (b == "unloopsound") {\u000a            if (m.loop != undefined) {\u000a              m.loop = false;\u000a            } else if (m.loopfn) {\u000a              m.removeEventListener('ended', m.loopfn);\u000a              delete m.loopfn;\u000a            }\u000a          } else if (b == "stopsound") {\u000a            m.pause();\u000a            m.currentTime = 0;\u000a          } else if (b == "fadeoutsound" || b == "fadeinsound") {\u000a            if (m.interval) clearInterval(m.interval);\u000a            if (b == "fadeinsound") {\u000a              if (m.currentTime>0) return;\u000a              m.volume = 0;\u000a              loop(m);\u000a            } else {\u000a              if (!m.currentTime) return;\u000a              m.play();\u000a            }\u000a            var v = m.volume;\u000a            m.interval = setInterval(function () {\u000a              v = Math.min(1, Math.max(0, v + 0.005 * (b == "fadeinsound" ? 1 : -1)));\u000a              m.volume = Math.easeInOut(v);\u000a              if (v == 0 || v == 1) clearInterval(m.interval);\u000a              if (v == 0) {\u000a                m.pause();\u000a                m.currentTime = 0;\u000a                m.volume = 1;\u000a              }\u000a            }, 10);\u000a          }\u000a        }\u000a      }\u000a    }\u000a  }\u000a  macros['fadeinsound'] = p;\u000a  macros['fadeoutsound'] = p;\u000a  macros['unloopsound'] = p;\u000a  macros['loopsound'] = p;\u000a  macros['pausesound'] = p;\u000a  macros['stopsound'] = p;\u000a  macros['stopallsound'] = {\u000a    handler: function () {\u000a      var s = macros.playsound.soundtracks;\u000a      for (var j in s) {\u000a        var i = s[j];\u000a        i.pause();\u000a        i.currentTime = 0;\u000a      }\u000a    }\u000a  }\u000a  var div = $("storeArea").firstChild;\u000a  var fe = ["ogg", "mp3", "wav", "webm"];\u000a  while (div) {\u000a    var b = String.fromCharCode(92);\u000a    var q = '"';\u000a    var re = "['" + q + "]([^" + q + "']*?)" + b + ".(ogg|mp3|wav|webm)['" + q + "]";\u000a    k(new RegExp(re, "gi"));\u000a    div = div.nextSibling;\u000a  }\u000a\u000a  function k(c, e) {\u000a    do {\u000a      d = c.exec(div.innerHTML);\u000a      if (d) {\u000a        var a = new Audio();\u000a        if (a.canPlayType) {\u000a          for (var i = -1; i < fe.length; i += 1) {\u000a            if (i >= 0) d[2] = fe[i];\u000a            if (a.canPlayType("audio/" + d[2])) break;\u000a          }\u000a          if (i < fe.length) {\u000a            a.setAttribute("src", d[1] + "." + d[2]);\u000a            a.interval = null;\u000a            macros.playsound.soundtracks[d[1]] = a;\u000a          } else console.log("Browser can't play '" + d[1] + "'");\u000a        }\u000a      }\u000a    } while (d);\u000a  }\u000a}());
+p277
+sg185
+(lp278
+Vscript
+p279
+asg187
+g23
+((I2013
+I7
+I27
+I15
+I6
+I54
+I5
+I208
+I1
+tp280
+(dp281
+tp282
+Rp283
+sg192
+g283
+sg193
+Vscript sound
+p284
+sbsa(dp285
+g12
+I00
+sg13
+(lp286
+I287
+aI650
+asg15
+(itiddlywiki
+Tiddler
+p287
+(dp288
+S'text'
+p289
+Vmacros['progress'] =\u000a	{\u000a		handler: function(obj, fnc, val)\u000a		{\u000a			 \u000avar div1 = document.createElement("div");\u000adiv1.style.width = "40%";\u000adiv1.style.background = "red";\u000adiv1.style.borderRadius = "5px";\u000adiv1.style.marginLeft="auto";\u000adiv1.style.marginRight="auto";\u000a//div1.style.align="center";\u000a\u000avar div2 =document.createElement("div");\u000a//div2.style.background = "#3063A5";\u000a//div2.style.background = "white";\u000adiv2.style.background = "#ADCAFF";\u000adiv2.style.height = "20px";\u000adiv2.style.width= state.history[0].variables["air"]+"%";\u000adiv2.style.borderRadius = "5px";\u000a\u000adiv1.appendChild(div2);\u000a\u000aobj.appendChild(div1);\u000a		}\u000a	}
+p290
+sS'tags'
+p291
+(lp292
+Vscript
+p293
+asS'created'
+p294
+g23
+((I2013
+I7
+I27
+I14
+I25
+I14
+I5
+I208
+I1
+tp295
+(dp296
+tp297
+Rp298
+sS'modified'
+p299
+g298
+sS'title'
+p300
+VScripts
+p301
+sbsasS'scale'
+p302
+I1
+ss.
